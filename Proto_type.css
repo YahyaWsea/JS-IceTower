@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#game_area{
+    background: url('assets/images/gameBG.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#GameOver{
+    display: none;
+}
+#GameOver h1 {
+    cursor: default;
+    position: absolute;
+    top: -15%;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+  
+  #GameOver h1 span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    -webkit-animation: bounce 0.3s ease infinite alternate;
+    font-size: 80px;
+    color: #1fddff;
+    text-shadow: 0 1px 0 rgb(45, 160, 206), 0 2px 0 rgb(45, 160, 206), 0 3px 0 rgb(45, 160, 206), 0 4px 0 rgb(45, 160, 206),
+      0 5px 0 rgb(45, 160, 206), 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+      0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  #GameOver h1 span:nth-child(2) {
+    -webkit-animation-delay: 0.1s;
+  }
+  
+  #GameOver h1 span:nth-child(3) {
+    -webkit-animation-delay: 0.2s;
+  }
+  
+  #GameOver h1 span:nth-child(4) {
+    -webkit-animation-delay: 0.3s;
+  }
+  
+  #GameOver h1 span:nth-child(5) {
+    -webkit-animation-delay: 0.4s;
+  }
+  
+  #GameOver h1 span:nth-child(6) {
+    -webkit-animation-delay: 0.5s;
+  }
+  
+  #GameOver h1 span:nth-child(7) {
+    -webkit-animation-delay: 0.6s;
+  }
+  
+  #GameOver h1 span:nth-child(8) {
+    -webkit-animation-delay: 0.2s;
+  }
+  
+  #GameOver h1 span:nth-child(9) {
+    -webkit-animation-delay: 0.3s;
+  }
+  
+  #GameOver h1 span:nth-child(10) {
+    -webkit-animation-delay: 0.4s;
+  }
+  
+  #GameOver h1 span:nth-child(11) {
+    -webkit-animation-delay: 0.5s;
+  }
+  
+  #GameOver h1 span:nth-child(12) {
+    -webkit-animation-delay: 0.6s;
+  }
+  
+  #GameOver h1 span:nth-child(13) {
+    -webkit-animation-delay: 0.7s;
+  }
+  
+  #GameOver h1 span:nth-child(14) {
+    -webkit-animation-delay: 0.8s;
+  }
+  
+  /* ANIMATION */
+  @-webkit-keyframes bounce {
+    100% {
+      top: -20px;
+      text-shadow: 0 1px 0 rgb(45, 160, 206), 0 2px 0 rgb(45, 160, 206), 0 3px 0 rgb(45, 160, 206), 0 4px 0 rgb(45, 160, 206),
+        0 5px 0 rgb(45, 160, 206), 0 6px 0 rgb(45, 160, 206), 0 7px 0 rgb(45, 160, 206), 0 8px 0 rgb(45, 160, 206), 0 9px 0 rgb(45, 160, 206),
+        0 50px 25px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+canvas{
+    opacity: 1;
+}
+body{
+  background-image: url('./images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color: #fff; */
+  font-size: 64px;
+  font-family: 'frozen';
+  /* height: 800px; */
+  height: 12em;
+  text-align: center;
+  overflow: hidden;
+}
+/* body {
+    text-align: center;
+    margin: 0px;
+    font-size: 64px;
+} */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container > div{
+    /* width: 1em; */
+    text-align: left;
+}
+.score_level{
+    width: 3em;
+    /* background-color: cornflowerblue; */
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score_level > div{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color:rgb(144, 159, 185);
+    padding: 0.2em;
+    text-align: center;
+}
+/* #score , #level{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background-color: darkblue;
+    padding: 0.2em;
+    text-align: center;
+} */
+
+/* #level{
+    width: 2.2em;
+    height: 2.2em;
+    background-color: darkblue;
+} */

@@ -1,0 +1,111 @@
+@font-face {
+	font-family:'frozen'; 
+	src:url('../fonts/Ice\ kingdom\ -\ Bold\ -\ Por\ Kustren.woff');
+}
+@font-face {
+    font-family: 'Bungee Shade';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Bungee Shade'), local('BungeeShade-Regular'), url('../fonts/DtVkJxarWL0t2KdzK3oI_jkc6SjTjQJElg.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+<<<<<<< HEAD
+  
+=======
+>>>>>>> 92631e53df9bac424b7fce3427a47b28f6fbfd71
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.character{
+    padding: 50px;
+}
+body{
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: #fff; */
+    /* display: flex; */
+    /* font-size: 14px; */
+    font-size: 64px;
+    font-family: 'frozen';
+    /* font-weight: 10px; */
+    /* height: 800px; */
+    height: 12em;
+}
+.menu h1{
+    /* padding: 10px; */
+    /* font-size: 50px; */
+    font-size: 0.8em;
+    padding: 0.2em;
+    margin: 0.2em;
+}
+.menu h1:hover a{
+    animation: stripes 1s infinite;
+}
+.menu h1:hover{
+    cursor: pointer;
+}
+.menu h1 a{
+    background: url('../images/ice-dark.jpg');
+    background-size: contain;
+    text-align: center;
+    color: transparent;
+    font-weight: 900;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+}
+.menu{
+    margin: auto;
+    display: inline-block;
+    /* padding: 20px; */
+    padding: 1em;
+    background: linear-gradient(to bottom, rgb(6, 82, 153), rgba(5, 154, 199, 0.1));
+    /* border-radius: 7px; */
+    border-radius: 0.5em;
+}
+#menuContainer{
+    /* margin-top: 70px; */
+    margin-top: 0.1em;
+    text-align: center;
+    /* width: 100%; */
+}
+#header{
+	font-family: 'Bungee Shade', cursive;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	font-weight: normal;
+	width: 100%;
+	text-align: center;
+	
+	font-size: 10vw;
+	background: linear-gradient(
+		-45deg, 
+		#4bc0c8 25%, 
+		#dde4ff 25%, 
+		#b0efff 50%, 
+		#4bc0c8 50%, 
+		#4bc0c8 75%, 
+		#85e7ff 75%, 
+		#ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+    /* background-size: 20px 20px; */
+    background-size: 0.15em 0.15em;
+	background-position: 0 0;
+	animation: stripes 1s linear infinite;
+}	
+a{
+    text-decoration: none;
+}
+
+@keyframes stripes {
+	100% { 
+		background-position: 20px 0, 20px 0, 20px 0;
+	}
+}
